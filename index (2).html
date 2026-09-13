@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <p class="logo">Student Portal System</p>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+
+<p>Academic Student System</p>
+
+
+<div class="main-box">
+    
+    <div class="Left-box">
+      <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name </th>
+                <th>Department </th>
+                <th>Age</th>
+                <th>Roll No</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable">
+
+
+        </tbody> 
+      </table>
+
+    </div>
+
+    <div class="Right-box">
+
+    <form id="studentform" action="Login" method="get">
+
+        <p>Manage Student Details</p>
+
+    <section class="Section">
+        <span> Add/Update Student Profile </span><br>
+        
+    <label for ="name">Name:</label>
+    <input type="text" id="name" name="name" size="18" required><br><br>
+
+
+    <label for="Dep">Department: </label>
+        <select id="Dep" name="Dep" required>
+            <option disabled selected>Select</option>
+            <option>Computer Science </option>
+            <option>Electronical Communication </option> 
+            <option>Electronical Engineering</option> 
+            <option>Civil Engineering</option> 
+            <option>Mechanical Engineering </option> 
+        </select> 
+<br><br>
+    
+    <label  for="Age">Age:</label>
+    <input type="range" id="Age" name="Age" min="10" max="30" >     
+    <span id="ageshow">  Thodra Paakalam..</span>
+    <br><br>
+
+
+    <label for="RollNo">Roll Num:</label>
+    <input type="text" name="RollNo" id="RollNo"  placeholder="22BECSE07" required>
+    <br><br>
+
+    <label for="gender"></label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+
+  <br>
+
+        <!-- </div> -->
+         <br>
+         <button class="submit" type="submit">Save</button>
+         <button class="update" type="button">Update</button>
+         <button class="delete" type="button">Delete</button>
+    </section>
+    
+    </form>
+    </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

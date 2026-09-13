@@ -1,0 +1,384 @@
+/* ================================
+   Fonts
+   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* ================================
+   Base
+   ================================ */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 30px;
+    background: #F6F1E7;
+    font-family: 'Inter', sans-serif;
+    color: #2A2A28;
+}
+
+p{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: #1F3A4C;
+}
+
+div p{
+    color: #1F3A4C;
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+span{
+    display: inline-block;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #786F5E;
+}
+
+/* ================================
+   Nav bar
+   ================================ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 34px;
+    margin: 0px 0px 26px 0px;
+    background: linear-gradient(100deg, #1F3A4C, #2A4E66);
+    border-radius: 12px;
+    box-shadow: 0 12px 28px -16px rgba(31,58,76,0.45);
+}
+
+.logo{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+}
+
+li>a{
+    text-decoration: none;
+    color: #D7E1E8;
+    font-size: 14.5px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.25s ease;
+}
+
+/* animated underline on hover */
+li>a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #3F8F6D;
+    transition: width 0.3s ease;
+}
+
+li>a:hover{
+    color: #ffffff;
+}
+
+li>a:hover::after{
+    width: 100%;
+}
+
+/* ================================
+   Layout
+   ================================ */
+.main-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.Left-box{
+    border: none;
+    border-radius: 14px;
+    margin: 0px;
+    width: 560px;
+    max-width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    box-shadow: 0 14px 34px -20px rgba(31,58,76,0.35);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Left-box:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 0 1.5px #3F8F6D, 0 18px 36px -16px rgba(63,143,109,0.4);
+}
+
+.Right-box{
+    border: none;
+    border-radius: 14px;
+    margin: 0px;
+    width: 380px;
+    max-width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    box-shadow: 0 14px 34px -20px rgba(31,58,76,0.35);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Right-box:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 0 1.5px #3B6EA5, 0 18px 36px -16px rgba(59,110,165,0.4);
+}
+
+.Section{
+    padding: 22px 26px 26px;
+}
+
+.Section span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1F3A4C;
+    padding-top: 0px;
+}
+
+/* ================================
+   Form title bar
+   ================================ */
+form{
+    margin-top: 0px;
+    font-size: 21px;
+    background-color: #ffffff;
+    margin-left: 0px;
+}
+
+form > p{
+    margin: 0px;
+    background: linear-gradient(100deg, #1F3A4C, #2A4E66);
+    color: #ffffff;
+    text-align: left;
+    padding: 16px 26px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* ================================
+   Table + alternating row colors
+   ================================ */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th{
+    background-color: #EFF3EE;
+    color: #1F3A4C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 2px solid #E4DDC9;
+}
+
+th:nth-child(1), td:nth-child(1),
+th:nth-child(4), td:nth-child(4){
+    text-align: center;
+}
+
+td{
+    padding: 12px;
+    border-bottom: 1px solid #EFEAE0;
+}
+
+tr:nth-child(even) td {
+    background-color: white;
+}
+
+tr:nth-child(odd) td {
+    background-color: #FBF8F1;
+}
+
+/* highlight the row you're pointing at */
+tbody tr{
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover td{
+    background-color: #EAF3EE;
+}
+
+/* ================================
+   Form fields
+   ================================ */
+label{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1F3A4C;
+    margin-bottom: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#name, #RollNo {
+    width: 220px;
+    height: 14px;
+    font-size: 14.5px;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid #E4DDC9;
+    background: #FBF8F1;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+#name:focus, #RollNo:focus {
+    outline: none;
+    border-color: #3B6EA5;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59,110,165,0.18);
+}
+
+#Dep {
+    width: 240px;
+    height: 38px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+    border: 1.5px solid #E4DDC9;
+    background: #FBF8F1;
+    padding: 0px 10px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#Dep:focus {
+    outline: none;
+    border-color: #3B6EA5;
+    box-shadow: 0 0 0 3px rgba(59,110,165,0.18);
+}
+
+/* range slider */
+#Age {
+    width: 170px;
+    height: 5px;
+    vertical-align: middle;
+    accent-color: #3F8F6D;
+}
+
+#ageshow {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    padding: 4px 12px;
+    background: #EFF3EE;
+    border: 1px solid #E4DDC9;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #1F3A4C;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* radio group */
+input[type="radio"]{
+    accent-color: #3B6EA5;
+    margin-left: 6px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+input[type="radio"]:first-of-type{
+    margin-left: 0px;
+}
+
+/* ================================
+   Buttons — Save / Update / Delete
+   ================================ */
+.submit, .update, .delete{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    border: none;
+    border-radius: 999px;
+    padding: 11px 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 6px;
+    transition: transform 0.18s ease, box-shadow 0.2s ease, background 0.25s ease;
+}
+
+.submit{
+    background-color: #3F8F6D;
+    box-shadow: 0 8px 18px -9px rgba(63,143,109,0.7);
+}
+.submit:hover{
+    background-color: #5CAE8A;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px -8px rgba(63,143,109,0.75);
+}
+
+.update{
+    background-color: #3B6EA5;
+    box-shadow: 0 8px 18px -9px rgba(59,110,165,0.65);
+}
+.update:hover{
+    background-color: #5C8BC0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px -8px rgba(59,110,165,0.7);
+}
+
+.delete{
+    background-color: #C1653D;
+    box-shadow: 0 8px 18px -9px rgba(193,101,61,0.65);
+}
+.delete:hover{
+    background-color: #D68259;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px -8px rgba(193,101,61,0.7);
+}
+
+.submit:active, .update:active, .delete:active{
+    transform: translateY(0px);
+}
+
+/* respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce){
+    *{
+        transition: none !important;
+        animation: none !important;
+    }
+}
