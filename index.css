@@ -1,11 +1,7 @@
-/* ================================
-   Fonts
-   ================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 
-/* ================================
-   Base
-   ================================ */
+
 *{
     box-sizing: border-box;
 }
@@ -106,15 +102,13 @@ li>a:hover::after{
     width: 100%;
 }
 
-/* ================================
-   Layout
-   ================================ */
+
 .main-box{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     gap: 50px;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    max-width: 1000px;
     flex-wrap: wrap;
 }
 
