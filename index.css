@@ -106,16 +106,15 @@ li>a:hover::after{
 .main-box{
     display: flex;
     align-items: flex-start;
-    gap: 60px;
     margin: 20px auto 0;
-    max-width: 1000px;
+    max-width: 1100px;
     flex-wrap: wrap;
 }
 
 .Left-box{
     border: none;
     border-radius: 14px;
-    margin: 0px;
+    margin: 0px 90px 0px 0px;
     width: 560px;
     max-width: 100%;
     background-color: #ffffff;
