@@ -115,7 +115,7 @@ li>a:hover::after{
 .Left-box{
     border: none;
     border-radius: 14px;
-    margin: 0px 90px 0px 0px;
+    margin: 0px 0px 0px 0px;
     width: 560px;
     max-width: 100%;
     background-color: #ffffff;
