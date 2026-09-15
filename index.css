@@ -106,7 +106,7 @@ li>a:hover::after{
 .main-box{
     display: flex;
     align-items: flex-start;
-    gap: 150px;
+    gap: 60px;
     margin: 20px auto 0;
     max-width: 1000px;
     flex-wrap: wrap;
